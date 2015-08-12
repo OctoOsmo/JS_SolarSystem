@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-image: url("../img/bg-stars.png");
 }
 h1{
     color: cornflowerblue;
@@ -8,8 +8,8 @@ h1{
 }
 #solar_system{
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     top: 50%;
     left: 50%;
 }
@@ -27,27 +27,44 @@ h1{
     width: 100%;
 }
 
-.earth_orbit{
+.earth{
     position: absolute;
+    width:100%;
+    height: 100%;
     left: -50%;
     top: -50%;
     margin:0 auto;
+}
+
+.earth_orbit_circle{
+    position: absolute;
     width:100%;
     height: 100%;
-    animation: rotate 60s infinite linear;
 }
 
-.earth_orbit img{
-    height: 100%;
+.earth_orbit_circle img{
     width: 100%;
+    height: 100%;
 }
 
-#earth{
+.earth_orbit{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    animation: rotate 10s infinite linear;
+}
+
+#p_earth{
     width: 3%;
     height: 3%;
     position: relative;
-    top: -3%;
     left: 50%;
+}
+
+#p_earth img{
+    position: relative;
+    bottom: 50%;
+    animation: rotate 10s infinite linear;
 }
 
 #mun{
